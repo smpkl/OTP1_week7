@@ -3,8 +3,8 @@ import java.sql.*;
 public class ResultService {
 
     private static final String DB_NAME = "calc_data";
-    private static final String DB_USER = "appuser";
-    private static final String DB_PASSWORD = "password";
+    private static final String DB_USER = "root";
+    private static final String DB_PASSWORD = "root";
 
     // Load MariaDB driver
     static {
