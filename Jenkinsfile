@@ -40,8 +40,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    docker compose down
-                    IMAGE_TAG=${IMAGE_TAG} docker compose up -d
+					bat 'docker compose down'
+					bat 'docker compose up -d'
                 }
             }
         }
