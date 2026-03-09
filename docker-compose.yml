@@ -20,7 +20,7 @@ services:
     #IMPORTANT docker build -t yourname/calculator .
     # docker push yourname/calculator: last
     # then you can change the image in the following statment
-    image: gasdy/calculator:latest
+    image: gasdy/otp1_week7:latest
     container_name: calculator-app
     depends_on:
       - db
