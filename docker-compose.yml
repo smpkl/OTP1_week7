@@ -7,8 +7,7 @@ services:
     restart: always
     environment:
       # make sure your DB_PASSWORD is correct mine is root
-      MYSQL_USER: appuser
-      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: calc_data
       # Make sure your 3307 port is available
     ports:
