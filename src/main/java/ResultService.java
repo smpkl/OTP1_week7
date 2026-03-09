@@ -2,7 +2,7 @@ import java.sql.*;
 
 public class ResultService {
 
-    private static final String DB_NAME = "calc_results";
+    private static final String DB_NAME = "calc_data";
     private static final String DB_USER = "appuser";
     private static final String DB_PASSWORD = "password";
 
@@ -48,7 +48,7 @@ public class ResultService {
             stmt.executeUpdate(createTable);
 
             // Insert the result
-            String insert = "INSERT INTO calc_results (number1, number2, sum_result, subtraction_result, product_result, division_result) VALUES (?, ?, ?, ?)";
+            String insert = "INSERT INTO calc_results (number1, number2, sum_result, subtraction_result, product_result, division_result) VALUES (?, ?, ?, ?, ?, ?)";
             try (PreparedStatement ps = conn.prepareStatement(insert)) {
                 ps.setDouble(1, n1);
                 ps.setDouble(2, n2);
